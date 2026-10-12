@@ -1,0 +1,60 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Modern",
+        "Minimal",
+        "Luxury",
+        "Traditional",
+        "Industrial",
+        "Scandinavian"
+      ]
+    },
+    "style": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "dimensions": {
+      "type": "string"
+    },
+    "budget": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "testimonial": {
+      "type": "string"
+    },
+    "client_name": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "image"
+  ]
+}

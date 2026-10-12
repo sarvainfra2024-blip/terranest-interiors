@@ -1,0 +1,43 @@
+{
+  "name": "Testimonial",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string"
+    },
+    "project_type": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "number",
+      "default": 5
+    },
+    "quote": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "is_approved": {
+      "type": "boolean",
+      "title": "Approved",
+      "default": false
+    },
+    "is_public": {
+      "type": "boolean",
+      "title": "Show on Website",
+      "default": false
+    }
+  },
+  "required": [
+    "client_name",
+    "quote"
+  ]
+}

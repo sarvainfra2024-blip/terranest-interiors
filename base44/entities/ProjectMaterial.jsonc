@@ -1,0 +1,46 @@
+{
+  "name": "ProjectMaterial",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Laminates",
+        "Hardware",
+        "Hinges",
+        "Channels",
+        "Handles",
+        "Glass",
+        "Countertop",
+        "Paint",
+        "Accessories"
+      ],
+      "default": "Laminates",
+      "title": "Category"
+    },
+    "brand": {
+      "type": "string",
+      "title": "Brand"
+    },
+    "color": {
+      "type": "string",
+      "title": "Color"
+    },
+    "finish": {
+      "type": "string",
+      "title": "Finish"
+    },
+    "quantity": {
+      "type": "string",
+      "title": "Quantity"
+    }
+  },
+  "required": [
+    "project_id",
+    "category"
+  ]
+}

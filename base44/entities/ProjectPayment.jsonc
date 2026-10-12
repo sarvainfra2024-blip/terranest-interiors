@@ -1,0 +1,45 @@
+{
+  "name": "ProjectPayment",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "amount": {
+      "type": "number",
+      "title": "Amount"
+    },
+    "payment_type": {
+      "type": "string",
+      "enum": [
+        "Advance",
+        "Milestone",
+        "Final"
+      ],
+      "default": "Milestone",
+      "title": "Payment Type"
+    },
+    "method": {
+      "type": "string",
+      "title": "Payment Method"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    },
+    "receipt_url": {
+      "type": "string",
+      "title": "Receipt URL"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    }
+  },
+  "required": [
+    "project_id",
+    "amount"
+  ]
+}

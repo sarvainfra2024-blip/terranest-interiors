@@ -1,0 +1,117 @@
+{
+  "name": "Offer",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Offer Title"
+    },
+    "short_description": {
+      "type": "string",
+      "title": "Short Description"
+    },
+    "detailed_description": {
+      "type": "string",
+      "title": "Detailed Description"
+    },
+    "banner_image": {
+      "type": "string",
+      "title": "Banner Image URL"
+    },
+    "additional_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": [],
+      "title": "Additional Images"
+    },
+    "offer_type": {
+      "type": "string",
+      "enum": [
+        "Discount",
+        "Package Deal",
+        "Seasonal",
+        "Festival",
+        "Referral",
+        "Custom"
+      ],
+      "default": "Discount",
+      "title": "Offer Type"
+    },
+    "original_price": {
+      "type": "number",
+      "title": "Original Price / Value"
+    },
+    "offer_price": {
+      "type": "number",
+      "title": "Offer Price"
+    },
+    "discount_percent": {
+      "type": "number",
+      "title": "Discount %"
+    },
+    "valid_from": {
+      "type": "string",
+      "format": "date",
+      "title": "Valid From"
+    },
+    "valid_until": {
+      "type": "string",
+      "format": "date",
+      "title": "Valid Until"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "title": "Active"
+    },
+    "is_public": {
+      "type": "boolean",
+      "default": true,
+      "title": "Publicly Visible"
+    },
+    "show_in_popup": {
+      "type": "boolean",
+      "default": true,
+      "title": "Show in Offer Popup"
+    },
+    "show_in_ticker": {
+      "type": "boolean",
+      "default": true,
+      "title": "Show in Header Ticker"
+    },
+    "terms_conditions": {
+      "type": "string",
+      "title": "Terms & Conditions"
+    },
+    "cta_text": {
+      "type": "string",
+      "default": "Get Offer",
+      "title": "CTA Button Text"
+    },
+    "cta_action": {
+      "type": "string",
+      "enum": [
+        "Contact",
+        "Enquiry",
+        "Book Consultation",
+        "Custom URL"
+      ],
+      "default": "Enquiry",
+      "title": "CTA Action"
+    },
+    "cta_url": {
+      "type": "string",
+      "title": "Custom CTA URL"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "title": "Display Order"
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

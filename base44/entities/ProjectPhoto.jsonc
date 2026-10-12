@@ -1,0 +1,41 @@
+{
+  "name": "ProjectPhoto",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "stage": {
+      "type": "string",
+      "title": "Stage"
+    },
+    "photo_type": {
+      "type": "string",
+      "enum": [
+        "Before",
+        "After",
+        "Installation"
+      ],
+      "default": "Before",
+      "title": "Photo Type"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Image URL"
+    },
+    "caption": {
+      "type": "string",
+      "title": "Caption"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    }
+  },
+  "required": [
+    "project_id",
+    "image_url"
+  ]
+}

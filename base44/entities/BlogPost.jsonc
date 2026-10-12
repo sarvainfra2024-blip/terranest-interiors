@@ -1,0 +1,40 @@
+{
+  "name": "BlogPost",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "default": "Design Tips"
+    },
+    "excerpt": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "read_time": {
+      "type": "string"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title",
+    "image"
+  ]
+}

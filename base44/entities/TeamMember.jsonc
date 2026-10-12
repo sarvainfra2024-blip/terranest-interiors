@@ -1,0 +1,30 @@
+{
+  "name": "TeamMember",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "role": {
+      "type": "string",
+      "title": "Role / Title"
+    },
+    "experience": {
+      "type": "string",
+      "title": "Experience (e.g. 12 years)"
+    },
+    "image": {
+      "type": "string",
+      "title": "Photo URL"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "name",
+    "role"
+  ]
+}

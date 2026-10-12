@@ -1,0 +1,94 @@
+{
+  "name": "RateMaster",
+  "type": "object",
+  "properties": {
+    "rate_type": {
+      "type": "string",
+      "enum": [
+        "Carcass Material",
+        "Shutter Material",
+        "Accessory",
+        "Hardware",
+        "Finish",
+        "Internal Finish",
+        "Labour",
+        "Installation",
+        "Other"
+      ],
+      "title": "Rate Type"
+    },
+    "name": {
+      "type": "string",
+      "title": "Item Name"
+    },
+    "category": {
+      "type": "string",
+      "title": "Category",
+      "description": "e.g. Carcass, Shutter, Carcass/Shutter"
+    },
+    "thickness": {
+      "type": "string",
+      "title": "Thickness"
+    },
+    "brand": {
+      "type": "string",
+      "title": "Brand"
+    },
+    "model": {
+      "type": "string",
+      "title": "Model"
+    },
+    "rate": {
+      "type": "number",
+      "default": 0,
+      "title": "Rate"
+    },
+    "rate_unit": {
+      "type": "string",
+      "enum": [
+        "Sq.ft",
+        "Sq.m",
+        "Running Ft",
+        "Running Meter",
+        "Per Piece",
+        "Per Nos",
+        "Per Set",
+        "Per Module",
+        "Percentage",
+        "Fixed Amount"
+      ],
+      "default": "Sq.ft",
+      "title": "Rate Unit"
+    },
+    "gst_percent": {
+      "type": "number",
+      "default": 0,
+      "title": "GST (%)"
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date",
+      "title": "Effective From"
+    },
+    "effective_until": {
+      "type": "string",
+      "format": "date",
+      "title": "Effective Until"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "title": "Active"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "rate_type",
+    "name",
+    "rate",
+    "rate_unit"
+  ]
+}

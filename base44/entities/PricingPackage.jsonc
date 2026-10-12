@@ -1,0 +1,78 @@
+{
+  "name": "PricingPackage",
+  "type": "object",
+  "properties": {
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "1 BHK",
+        "2 BHK",
+        "3 BHK",
+        "4 BHK",
+        "Villa"
+      ],
+      "title": "Property Type"
+    },
+    "tier": {
+      "type": "string",
+      "enum": [
+        "Essential",
+        "Premium",
+        "Luxury"
+      ],
+      "title": "Package Tier"
+    },
+    "base_price": {
+      "type": "number",
+      "title": "Base Price (\u20b9)"
+    },
+    "discounted_price": {
+      "type": "number",
+      "title": "Discounted Price (\u20b9)"
+    },
+    "discount_percent": {
+      "type": "number",
+      "title": "Discount (%)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    },
+    "is_popular": {
+      "type": "boolean",
+      "title": "Mark as Popular",
+      "default": false
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Features List"
+    },
+    "warranty_months": {
+      "type": "number",
+      "title": "Warranty (years)",
+      "default": 12
+    },
+    "delivery_days": {
+      "type": "number",
+      "title": "Delivery Timeline (days)",
+      "default": 45
+    },
+    "promotional_label": {
+      "type": "string",
+      "title": "Promotional Label"
+    },
+    "image_url": {
+      "type": "string",
+      "title": "Package Image URL"
+    }
+  },
+  "required": [
+    "property_type",
+    "tier",
+    "base_price"
+  ]
+}

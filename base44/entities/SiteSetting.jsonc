@@ -1,0 +1,270 @@
+{
+  "name": "SiteSetting",
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "default": "Terranest Interiors"
+    },
+    "admin_header_name": {
+      "type": "string",
+      "title": "Admin Panel Header Name"
+    },
+    "logo_url": {
+      "type": "string",
+      "title": "Company Logo URL"
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "whatsapp_number": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "hero_title": {
+      "type": "string"
+    },
+    "hero_subtitle": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "string"
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_description": {
+      "type": "string"
+    },
+    "about_image": {
+      "type": "string"
+    },
+    "story_label": {
+      "type": "string",
+      "title": "Our Story Label",
+      "default": "Our Story"
+    },
+    "story_heading": {
+      "type": "string",
+      "title": "Our Story Heading",
+      "default": "Born from a Love of Thoughtful Design"
+    },
+    "story_para1": {
+      "type": "string",
+      "title": "Our Story Paragraph 1"
+    },
+    "story_para2": {
+      "type": "string",
+      "title": "Our Story Paragraph 2"
+    },
+    "footer_text": {
+      "type": "string"
+    },
+    "why_choose_label": {
+      "type": "string",
+      "title": "Why Terranest Label"
+    },
+    "why_choose_title": {
+      "type": "string",
+      "title": "Why Terranest Heading"
+    },
+    "process_label": {
+      "type": "string",
+      "title": "Process Page Label"
+    },
+    "process_title": {
+      "type": "string",
+      "title": "Process Page Heading"
+    },
+    "process_subtitle": {
+      "type": "string",
+      "title": "Process Page Subtitle"
+    },
+    "portfolio_label": {
+      "type": "string",
+      "title": "Our Work Label",
+      "default": "Our Work"
+    },
+    "portfolio_title": {
+      "type": "string",
+      "title": "Our Work Heading",
+      "default": "Spaces We've Transformed"
+    },
+    "portfolio_subtitle": {
+      "type": "string",
+      "title": "Our Work Subtitle",
+      "default": "Each project is a unique story of vision meeting craftsmanship."
+    },
+    "welcome_onboard_subject": {
+      "type": "string",
+      "title": "Welcome Onboard Email Subject",
+      "default": "Welcome Onboard! Your Interior Journey Begins"
+    },
+    "welcome_onboard_title": {
+      "type": "string",
+      "title": "Welcome Onboard Title",
+      "default": "Welcome Onboard"
+    },
+    "welcome_onboard_message": {
+      "type": "string",
+      "title": "Welcome Onboard Message",
+      "default": "We're thrilled to begin your interior design journey with you. This is your dedicated project portal where you can track every stage of your project \u2014 from initial measurement to final handover. If you have any questions, our team is always here to help."
+    },
+    "facebook_url": {
+      "type": "string"
+    },
+    "instagram_url": {
+      "type": "string"
+    },
+    "linkedin_url": {
+      "type": "string"
+    },
+    "show_instant_estimate": {
+      "type": "boolean",
+      "title": "Show Instant Estimate on Pricing Page",
+      "default": true
+    },
+    "stat_customers": {
+      "type": "number",
+      "default": 6000
+    },
+    "stat_customers_suffix": {
+      "type": "string",
+      "default": "+"
+    },
+    "stat_experience": {
+      "type": "number",
+      "default": 12
+    },
+    "stat_experience_suffix": {
+      "type": "string",
+      "default": "+"
+    },
+    "stat_designs": {
+      "type": "number",
+      "default": 30
+    },
+    "stat_designs_suffix": {
+      "type": "string",
+      "default": "+"
+    },
+    "stat_warranty": {
+      "type": "number",
+      "default": 30
+    },
+    "stat_warranty_suffix": {
+      "type": "string",
+      "default": ""
+    },
+    "stat_warranty_label": {
+      "type": "string",
+      "title": "Warranty Stat Label",
+      "default": "Years Warranty"
+    },
+    "stat_delivery": {
+      "type": "number",
+      "default": 45
+    },
+    "stat_delivery_suffix": {
+      "type": "string",
+      "default": ""
+    },
+    "stat_delivery_label": {
+      "type": "string",
+      "title": "Delivery Stat Label",
+      "default": "Days Delivery"
+    },
+    "hero_stat_label": {
+      "type": "string",
+      "title": "Hero Badge Label",
+      "default": "YEARS"
+    },
+    "cta_bg_image": {
+      "type": "string",
+      "title": "CTA Section Background Image"
+    },
+    "img_service_home": {
+      "type": "string",
+      "title": "Service: Complete Home Interiors"
+    },
+    "img_service_kitchen": {
+      "type": "string",
+      "title": "Service: Modular Kitchen"
+    },
+    "img_service_bedroom": {
+      "type": "string",
+      "title": "Service: Bedroom Interiors"
+    },
+    "img_service_living": {
+      "type": "string",
+      "title": "Service: Living Room Design"
+    },
+    "img_service_lighting": {
+      "type": "string",
+      "title": "Service: Lighting Design"
+    },
+    "img_service_space": {
+      "type": "string",
+      "title": "Service: Space Planning / Office"
+    },
+    "img_service_dining": {
+      "type": "string",
+      "title": "Service: Dining Room Design"
+    },
+    "img_service_wardrobe": {
+      "type": "string",
+      "title": "Service: Wardrobe Design"
+    },
+    "img_service_ceiling": {
+      "type": "string",
+      "title": "Service: False Ceiling"
+    },
+    "img_service_furniture": {
+      "type": "string",
+      "title": "Service: Furniture Design"
+    },
+    "img_service_villa": {
+      "type": "string",
+      "title": "Service: Luxury Villa Interiors"
+    },
+    "img_service_commercial": {
+      "type": "string",
+      "title": "Service: Commercial Spaces"
+    },
+    "img_service_renovation": {
+      "type": "string",
+      "title": "Service: Renovation"
+    },
+    "img_portfolio_1": {
+      "type": "string",
+      "title": "Portfolio Teaser: Serene Urban Apartment"
+    },
+    "img_portfolio_2": {
+      "type": "string",
+      "title": "Portfolio Teaser: Contemporary Kitchen"
+    },
+    "img_portfolio_3": {
+      "type": "string",
+      "title": "Portfolio Teaser: Luxury Master Suite"
+    },
+    "img_portfolio_4": {
+      "type": "string",
+      "title": "Portfolio Teaser: Executive Villa"
+    },
+    "img_portfolio_5": {
+      "type": "string",
+      "title": "Portfolio Teaser: Elegant Dining Space"
+    }
+  },
+  "required": [
+    "company_name"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "StoryBadge",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Badge Text"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "title"
+  ]
+}

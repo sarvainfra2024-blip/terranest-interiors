@@ -1,0 +1,31 @@
+{
+  "name": "WhyChooseFeature",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Feature Title"
+    },
+    "desc": {
+      "type": "string",
+      "title": "Description"
+    },
+    "icon": {
+      "type": "string",
+      "title": "Icon (lucide name)",
+      "default": "Star"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "title",
+    "desc"
+  ]
+}

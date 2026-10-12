@@ -1,0 +1,31 @@
+{
+  "name": "PricingConfig",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "title": "Config Key"
+    },
+    "label": {
+      "type": "string",
+      "title": "Label"
+    },
+    "value": {
+      "type": "number",
+      "title": "Value"
+    },
+    "unit": {
+      "type": "string",
+      "title": "Unit (% or \u20b9)"
+    },
+    "is_active": {
+      "type": "boolean",
+      "title": "Active",
+      "default": true
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}

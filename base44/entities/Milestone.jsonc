@@ -1,0 +1,22 @@
+{
+  "name": "Milestone",
+  "type": "object",
+  "properties": {
+    "year": {
+      "type": "string",
+      "title": "Year"
+    },
+    "event": {
+      "type": "string",
+      "title": "Event Description"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "year",
+    "event"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "ProjectDocument",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "doc_type": {
+      "type": "string",
+      "enum": [
+        "Quotation",
+        "BOQ",
+        "Agreement",
+        "Drawings",
+        "2D Layout",
+        "3D Designs",
+        "Material List",
+        "Warranty",
+        "Invoice",
+        "Payment Receipt"
+      ],
+      "default": "Quotation",
+      "title": "Document Type"
+    },
+    "file_url": {
+      "type": "string",
+      "title": "File URL"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Date"
+    }
+  },
+  "required": [
+    "project_id",
+    "file_url"
+  ]
+}

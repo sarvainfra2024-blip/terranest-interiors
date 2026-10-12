@@ -1,0 +1,31 @@
+{
+  "name": "TierFeature",
+  "type": "object",
+  "properties": {
+    "tier": {
+      "type": "string",
+      "enum": [
+        "Essential",
+        "Premium",
+        "Luxury"
+      ],
+      "title": "Package Tier"
+    },
+    "feature": {
+      "type": "string",
+      "title": "Feature Text"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "tier",
+    "feature"
+  ]
+}

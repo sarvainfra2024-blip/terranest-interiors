@@ -1,0 +1,230 @@
+{
+  "name": "Quotation",
+  "type": "object",
+  "properties": {
+    "quotation_number": {
+      "type": "string",
+      "title": "Quotation Number"
+    },
+    "quotation_type": {
+      "type": "string",
+      "enum": [
+        "New",
+        "Existing"
+      ],
+      "default": "New",
+      "title": "Quotation Type"
+    },
+    "client_name": {
+      "type": "string",
+      "title": "Client Name"
+    },
+    "client_email": {
+      "type": "string",
+      "title": "Client Email"
+    },
+    "client_phone": {
+      "type": "string",
+      "title": "Client Phone"
+    },
+    "client_address": {
+      "type": "string",
+      "title": "Client Address"
+    },
+    "client_city": {
+      "type": "string",
+      "title": "Client City"
+    },
+    "client_state": {
+      "type": "string",
+      "title": "Client State"
+    },
+    "client_pincode": {
+      "type": "string",
+      "title": "Client Pincode"
+    },
+    "project_id": {
+      "type": "string",
+      "title": "Linked Project ID"
+    },
+    "project_location": {
+      "type": "string",
+      "title": "Project Location"
+    },
+    "project_type": {
+      "type": "string",
+      "enum": [
+        "1 BHK",
+        "2 BHK",
+        "3 BHK",
+        "4 BHK",
+        "Villa",
+        "Commercial"
+      ],
+      "title": "Project Type"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Fresh Quotation",
+        "Draft",
+        "Sent",
+        "Accepted",
+        "Rejected"
+      ],
+      "default": "Fresh Quotation",
+      "title": "Status"
+    },
+    "subtotal": {
+      "type": "number",
+      "default": 0,
+      "title": "Subtotal"
+    },
+    "woodwork_discount": {
+      "type": "number",
+      "default": 0,
+      "title": "Woodwork Discount"
+    },
+    "woodwork_discount_type": {
+      "type": "string",
+      "enum": [
+        "Amount",
+        "Percentage"
+      ],
+      "default": "Amount",
+      "title": "Woodwork Discount Type"
+    },
+    "woodwork_discount_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Woodwork Discount Amount"
+    },
+    "accessories_discount": {
+      "type": "number",
+      "default": 0,
+      "title": "Accessories Discount"
+    },
+    "accessories_discount_type": {
+      "type": "string",
+      "enum": [
+        "Amount",
+        "Percentage"
+      ],
+      "default": "Amount",
+      "title": "Accessories Discount Type"
+    },
+    "accessories_discount_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Accessories Discount Amount"
+    },
+    "tax_percent": {
+      "type": "number",
+      "default": 0,
+      "title": "Tax (%)"
+    },
+    "tax_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Tax Amount"
+    },
+    "grand_total": {
+      "type": "number",
+      "default": 0,
+      "title": "Grand Total"
+    },
+    "quotation_charges": {
+      "type": "array",
+      "title": "Quotation-Level Charges",
+      "description": "Rate names from Rate Master under Labour, Installation, Other \u2014 each with include/exclude toggle.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rate_type": {
+            "type": "string",
+            "title": "Rate Type"
+          },
+          "name": {
+            "type": "string",
+            "title": "Rate Name"
+          },
+          "rate": {
+            "type": "number",
+            "default": 0,
+            "title": "Rate"
+          },
+          "rate_unit": {
+            "type": "string",
+            "title": "Rate Unit"
+          },
+          "amount": {
+            "type": "number",
+            "default": 0,
+            "title": "Amount"
+          },
+          "included": {
+            "type": "boolean",
+            "default": true,
+            "title": "Included in Grand Total"
+          }
+        }
+      },
+      "default": []
+    },
+    "labour_item": {
+      "type": "string",
+      "title": "Labour Item"
+    },
+    "labour_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Labour Amount"
+    },
+    "labour_included": {
+      "type": "boolean",
+      "default": true,
+      "title": "Labour Included in Grand Total"
+    },
+    "installation_item": {
+      "type": "string",
+      "title": "Installation Item"
+    },
+    "installation_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Installation Amount"
+    },
+    "installation_included": {
+      "type": "boolean",
+      "default": true,
+      "title": "Installation Included in Grand Total"
+    },
+    "other_item": {
+      "type": "string",
+      "title": "Other Item"
+    },
+    "other_amount": {
+      "type": "number",
+      "default": 0,
+      "title": "Other Amount"
+    },
+    "other_included": {
+      "type": "boolean",
+      "default": true,
+      "title": "Other Included in Grand Total"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Notes"
+    },
+    "valid_till": {
+      "type": "string",
+      "format": "date",
+      "title": "Valid Till"
+    }
+  },
+  "required": [
+    "quotation_type",
+    "client_name"
+  ]
+}

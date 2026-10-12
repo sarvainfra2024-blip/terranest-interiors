@@ -1,0 +1,35 @@
+{
+  "name": "ModuleOption",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "Carcass Material",
+        "Shutter Material",
+        "Hinges",
+        "Tandems Quantity",
+        "Bottle Pullout",
+        "Finish",
+        "Handles"
+      ],
+      "title": "Category"
+    },
+    "value": {
+      "type": "string",
+      "title": "Option Value"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "category",
+    "value"
+  ]
+}

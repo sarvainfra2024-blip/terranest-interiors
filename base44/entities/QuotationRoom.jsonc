@@ -1,0 +1,234 @@
+{
+  "name": "QuotationRoom",
+  "type": "object",
+  "properties": {
+    "quotation_id": {
+      "type": "string",
+      "title": "Quotation ID"
+    },
+    "room_name": {
+      "type": "string",
+      "title": "Room Name"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "modules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "module_name": {
+            "type": "string",
+            "title": "Module Name"
+          },
+          "module_type": {
+            "type": "string",
+            "title": "Module Type"
+          },
+          "sub_module": {
+            "type": "string",
+            "title": "Sub Module"
+          },
+          "qty": {
+            "type": "number",
+            "default": 1
+          },
+          "width": {
+            "type": "string",
+            "title": "Width"
+          },
+          "height": {
+            "type": "string",
+            "title": "Height"
+          },
+          "depth": {
+            "type": "string",
+            "title": "Depth"
+          },
+          "dim_unit": {
+            "type": "string",
+            "enum": [
+              "MM",
+              "CM",
+              "Inches",
+              "Feet"
+            ],
+            "default": "MM"
+          },
+          "drawer_count": {
+            "type": "number",
+            "default": 0,
+            "title": "Drawer Count"
+          },
+          "carcass_material": {
+            "type": "string"
+          },
+          "shutter_material": {
+            "type": "string"
+          },
+          "shutter_finish": {
+            "type": "string",
+            "title": "Shutter Finish"
+          },
+          "edge_band": {
+            "type": "string",
+            "title": "Edge Band"
+          },
+          "edge_band_thickness": {
+            "type": "string",
+            "title": "Edge Band Thickness"
+          },
+          "finish": {
+            "type": "string",
+            "title": "Finish"
+          },
+          "internal_finish": {
+            "type": "string",
+            "title": "Internal Finish"
+          },
+          "include_in_total": {
+            "type": "boolean",
+            "default": true,
+            "title": "Include in Grand Total"
+          },
+          "hardware_selections": {
+            "type": "object",
+            "title": "Hardware Selections",
+            "description": "Map of hardware category -> selected item name, driven by Rate Master Hardware entries.",
+            "additionalProperties": {
+              "type": "string"
+            },
+            "default": {}
+          },
+          "hinges": {
+            "type": "string",
+            "title": "Hinges"
+          },
+          "hinges_qty": {
+            "type": "number",
+            "default": 1,
+            "title": "Hinges Qty"
+          },
+          "channels": {
+            "type": "string",
+            "title": "Channels"
+          },
+          "channels_qty": {
+            "type": "number",
+            "default": 1,
+            "title": "Channels Qty"
+          },
+          "accessories": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string"
+                },
+                "qty": {
+                  "type": "number",
+                  "default": 1
+                },
+                "sqft_qty": {
+                  "type": "number",
+                  "default": 0,
+                  "title": "SQ.FT Quantity"
+                },
+                "rate": {
+                  "type": "number",
+                  "default": 0
+                },
+                "rate_unit": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "number",
+                  "default": 0
+                }
+              }
+            },
+            "default": []
+          },
+          "labour_item": {
+            "type": "string"
+          },
+          "installation_item": {
+            "type": "string"
+          },
+          "other_item": {
+            "type": "string"
+          },
+          "discount": {
+            "type": "number",
+            "default": 0
+          },
+          "discount_type": {
+            "type": "string",
+            "enum": [
+              "Amount",
+              "Percentage"
+            ],
+            "default": "Amount"
+          },
+          "woodwork_discount": {
+            "type": "number",
+            "default": 0,
+            "title": "Woodwork Discount"
+          },
+          "woodwork_discount_type": {
+            "type": "string",
+            "enum": [
+              "Amount",
+              "Percentage"
+            ],
+            "default": "Amount",
+            "title": "Woodwork Discount Type"
+          },
+          "accessories_discount": {
+            "type": "number",
+            "default": 0,
+            "title": "Accessories Discount"
+          },
+          "accessories_discount_type": {
+            "type": "string",
+            "enum": [
+              "Amount",
+              "Percentage"
+            ],
+            "default": "Amount",
+            "title": "Accessories Discount Type"
+          },
+          "breakdown": {
+            "type": "object",
+            "title": "Computed Breakdown"
+          },
+          "rate_snapshot": {
+            "type": "object",
+            "title": "Rate Snapshot"
+          },
+          "amount": {
+            "type": "number",
+            "default": 0
+          }
+        }
+      },
+      "default": [],
+      "title": "Modules"
+    },
+    "room_total": {
+      "type": "number",
+      "default": 0,
+      "title": "Room Total"
+    }
+  },
+  "required": [
+    "quotation_id",
+    "room_name"
+  ]
+}

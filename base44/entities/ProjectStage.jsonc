@@ -1,0 +1,73 @@
+{
+  "name": "ProjectStage",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "name": {
+      "type": "string",
+      "title": "Stage Name"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Not Started",
+        "Scheduled",
+        "In Progress",
+        "Completed",
+        "On Hold",
+        "Delayed",
+        "Cancelled"
+      ],
+      "default": "Not Started",
+      "title": "Status"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "planned_start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Planned Start Date"
+    },
+    "planned_end_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Planned End Date"
+    },
+    "started_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Started At"
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Completed At"
+    },
+    "actual_completion_date": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Actual Completion Date"
+    },
+    "delay_reason": {
+      "type": "string",
+      "title": "Delay Reason"
+    },
+    "notes": {
+      "type": "string",
+      "title": "Remarks"
+    },
+    "updated_by": {
+      "type": "string",
+      "title": "Updated By"
+    }
+  },
+  "required": [
+    "project_id",
+    "name"
+  ]
+}

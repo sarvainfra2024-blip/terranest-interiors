@@ -1,0 +1,50 @@
+{
+  "name": "Lead",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Full Name"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone Number"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "location": {
+      "type": "string",
+      "title": "City / Location"
+    },
+    "property_type": {
+      "type": "string",
+      "title": "Property Type"
+    },
+    "budget": {
+      "type": "string",
+      "title": "Budget / Package"
+    },
+    "message": {
+      "type": "string",
+      "title": "Message"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "New",
+        "Contacted",
+        "Qualified",
+        "Converted",
+        "Lost"
+      ],
+      "default": "New"
+    }
+  },
+  "required": [
+    "name",
+    "phone"
+  ]
+}

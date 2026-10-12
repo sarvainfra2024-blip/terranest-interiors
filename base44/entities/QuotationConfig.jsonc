@@ -1,0 +1,96 @@
+{
+  "name": "QuotationConfig",
+  "type": "object",
+  "properties": {
+    "company_name": {
+      "type": "string",
+      "title": "Company Name",
+      "default": "Terranest Interiors"
+    },
+    "company_address": {
+      "type": "string",
+      "title": "Company Address"
+    },
+    "company_gst": {
+      "type": "string",
+      "title": "Company GST Number"
+    },
+    "company_phone": {
+      "type": "string",
+      "title": "Company Phone"
+    },
+    "company_email": {
+      "type": "string",
+      "title": "Company Email"
+    },
+    "company_website": {
+      "type": "string",
+      "title": "Company Website"
+    },
+    "logo_url": {
+      "type": "string",
+      "title": "Quotation Logo URL"
+    },
+    "bank_name": {
+      "type": "string",
+      "title": "Bank Name"
+    },
+    "bank_account_name": {
+      "type": "string",
+      "title": "Account Holder Name"
+    },
+    "bank_account_number": {
+      "type": "string",
+      "title": "Account Number"
+    },
+    "bank_ifsc": {
+      "type": "string",
+      "title": "IFSC Code"
+    },
+    "bank_branch": {
+      "type": "string",
+      "title": "Branch"
+    },
+    "terms_conditions": {
+      "type": "string",
+      "title": "Default Terms & Conditions"
+    },
+    "payment_structure": {
+      "type": "string",
+      "title": "Payment Structure",
+      "description": "Milestone-based payment breakdown shown in the quotation footer."
+    },
+    "site_usage_terms": {
+      "type": "string",
+      "title": "Site Usage & Terms",
+      "description": "Site usage conditions shown in the quotation footer."
+    },
+    "material_description": {
+      "type": "string",
+      "title": "Material Description",
+      "description": "General material notes shown in the quotation footer."
+    },
+    "default_validity_days": {
+      "type": "number",
+      "title": "Default Validity (days)",
+      "default": 30
+    },
+    "default_tax_percent": {
+      "type": "number",
+      "title": "Default Tax/GST (%)",
+      "default": 18
+    },
+    "footer_note": {
+      "type": "string",
+      "title": "Footer Note"
+    },
+    "passcode": {
+      "type": "string",
+      "title": "Domain Access Passcode",
+      "description": "Passcode required to open the Quotation Generate Domain."
+    }
+  },
+  "required": [
+    "company_name"
+  ]
+}

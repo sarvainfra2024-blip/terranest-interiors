@@ -1,0 +1,29 @@
+{
+  "name": "PasscodeResetToken",
+  "type": "object",
+  "properties": {
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "otp_code": {
+      "type": "string",
+      "title": "OTP Code"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Expires At"
+    },
+    "used": {
+      "type": "boolean",
+      "default": false,
+      "title": "Used"
+    }
+  },
+  "required": [
+    "email",
+    "otp_code",
+    "expires_at"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "RoomOption",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Room Name"
+    },
+    "order": {
+      "type": "number",
+      "default": 0
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

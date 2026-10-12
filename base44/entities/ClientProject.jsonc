@@ -1,0 +1,153 @@
+{
+  "name": "ClientProject",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string",
+      "title": "Project ID"
+    },
+    "tracking_token": {
+      "type": "string",
+      "title": "Secure Tracking Token"
+    },
+    "client_name": {
+      "type": "string",
+      "title": "Client Name"
+    },
+    "email": {
+      "type": "string",
+      "title": "Email"
+    },
+    "mobile": {
+      "type": "string",
+      "title": "Mobile"
+    },
+    "alt_mobile": {
+      "type": "string",
+      "title": "Alternate Mobile"
+    },
+    "address": {
+      "type": "string",
+      "title": "Property Address"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "pincode": {
+      "type": "string",
+      "title": "Pincode"
+    },
+    "project_name": {
+      "type": "string",
+      "title": "Project Name"
+    },
+    "property_type": {
+      "type": "string",
+      "enum": [
+        "1 BHK",
+        "2 BHK",
+        "3 BHK",
+        "4 BHK",
+        "Villa",
+        "Commercial"
+      ],
+      "title": "Property Type"
+    },
+    "interior_package": {
+      "type": "string",
+      "enum": [
+        "Essential",
+        "Premium",
+        "Luxury",
+        "Custom"
+      ],
+      "title": "Interior Package"
+    },
+    "project_duration": {
+      "type": "number",
+      "enum": [
+        35,
+        45,
+        75,
+        90,
+        120,
+        150,
+        180
+      ],
+      "default": 45,
+      "title": "Project Duration (days)"
+    },
+    "project_manager": {
+      "type": "string",
+      "title": "Project Manager"
+    },
+    "designer_assigned": {
+      "type": "string",
+      "title": "Designer Assigned"
+    },
+    "sales_executive": {
+      "type": "string",
+      "title": "Sales Executive"
+    },
+    "estimated_value": {
+      "type": "number",
+      "title": "Estimated Project Value"
+    },
+    "start_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Estimated Start Date"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date",
+      "title": "Estimated Completion Date"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "Planning",
+        "In Progress",
+        "On Hold",
+        "Completed",
+        "Archived"
+      ],
+      "default": "Planning",
+      "title": "Project Status"
+    },
+    "status_stage": {
+      "type": "string",
+      "enum": [
+        "Project Created",
+        "Initial Measurement",
+        "Design Phase",
+        "Material Selection",
+        "Cross Measurement",
+        "Manufacturing",
+        "Installation",
+        "Project Handed Over"
+      ],
+      "default": "Project Created",
+      "title": "Project Stage"
+    },
+    "overall_progress": {
+      "type": "number",
+      "default": 0,
+      "title": "Overall Progress (%)"
+    },
+    "lead_id": {
+      "type": "string",
+      "title": "Source Lead ID"
+    }
+  },
+  "required": [
+    "project_id",
+    "client_name",
+    "email"
+  ]
+}
